@@ -1,0 +1,16 @@
+Exceptional Handling 
+
+	public class ExceptionIntro {
+	    public static void main(String args[]) {
+	        int a = 10;
+	        String str = "Hello";
+	        try {
+	            int c = a + 10;
+	            System.out.println(c);
+	        } catch (Exception e)
+	        {
+	            System.out.println("e");
+	        }
+	        System.out.println("welcome");
+	    }
+	}
