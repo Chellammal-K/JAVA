@@ -1,0 +1,29 @@
+//Static Key
+//1.variable
+//2.method
+//3.block
+
+public class StaticKeyword {
+     static int counter=0; // variable
+      // int a=10;
+     StaticKeyword() 
+     {
+        counter +=1;
+        System.out.println(counter);
+     }
+    static void display() // method
+     {
+        System.out.println("Hello");
+     }
+     static{ // block
+        System.out.println("This is Static block");
+     }
+    public static void main(String[] args) {
+      System.out.println("main block");
+      StaticKeyword obj1=new StaticKeyword();
+      StaticKeyword obj2=new StaticKeyword();
+      StaticKeyword obj3=new StaticKeyword();
+      display();
+      // StaticKeyword.display();
+    }
+}
