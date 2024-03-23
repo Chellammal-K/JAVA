@@ -1,0 +1,52 @@
+/Inheritance - extends keyword
+//1.single - 1 base 1 child
+//2.Multilevel - 1 base 1 child 1 subchild
+//3.Hierarchial
+//4.mutliple- not posiible in direct class  
+//we can achieve with the help of interface
+ class A{
+
+ int a =10;
+ int b=20;
+ }
+class B extends A{ //single inheritance
+    int c=30;
+    B()
+    {
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+    }
+}
+ 
+ class C extends B// Multilevel inheritance
+{
+    int d=40;
+    C()
+    {
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+    }
+}
+//  class C extends A//hierarchial
+//  {
+//     int display=50;
+//     C()
+//     {
+//         System.out.println(a);
+//         System.out.println(b);
+//         System.out.println(d);
+
+
+//     }
+//  }
+
+public class Inheritance {
+  public static void main(String args[])
+  {
+ B obj1= new B();
+ C obj2= new C();
+  }  
+}
