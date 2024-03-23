@@ -1,0 +1,36 @@
+//  we override same method from parent to child
+// must to understand inheritance
+
+class CourseFee
+{
+     void fees()
+     {
+        int fee=15000;
+        System.out.println("Fee is:"+fee);
+     }
+    
+}
+class ABC extends CourseFee
+{
+    void fees()
+     {
+        int fee=40000;
+        System.out.println("Fee is:"+fee);
+     }
+}
+class sss extends CourseFee
+{
+    // void fees()
+    //  {
+    //     int fee=40000;
+    //     System.out.println("Fee is:"+fee);
+    //  }
+}
+public class MethodOverriding {
+    public static void main(String[] args) {
+      ABC a=new ABC();
+      sss x=new sss();
+      a.fees();
+      x.fees();
+    }
+}
